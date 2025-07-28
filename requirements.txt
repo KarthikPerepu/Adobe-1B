@@ -1,0 +1,6 @@
+# Filename: requirements.txt
+pdfminer.six>=20201018
+sentence-transformers>=2.2.2
+numpy>=1.21.0
+scikit-learn>=1.0.0
+torch>=1.12.0
