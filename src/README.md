@@ -6,10 +6,7 @@ Our redesigned pipeline transforms finding relevant portions of documents into a
 
 1. **Contextualized Query Generation**  
    We merge the user’s `Persona` (e.g., “financial reporter”) and the `Task` (e.g., “evaluate quarterly earnings”) into a single, narrative-style prompt.  
-   _Example:_  
-   > "A financial reporter investigating Q2 earnings trends seeks to highlight key revenue drivers."  
-   This enriched prompt captures nuance, guiding the model to better interpret the user’s goals.
-
+   
 2. **Document Parsing & Segmentation**  
    - Use **PyMuPDF** to extract text from PDFs, preserving section headers and page breaks.  
    - Split the text into coherent chunks—usually at paragraph or subsection boundaries—to respect context and model input limits.
